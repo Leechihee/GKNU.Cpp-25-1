@@ -7,9 +7,7 @@ typedef struct CRect {
 
 int main()
 {
-	Rect r;
-	r.wid = 3;
-	r.hig = 4;
+	Rect r{3,4};
 	std::cout << r.Area();
 	return 0;
 }
