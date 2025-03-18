@@ -1,3 +1,4 @@
+```cpp
 // 상속
 // inheotance
 // protected
@@ -24,3 +25,4 @@ int main()
 	delete p;
 	return 0;
 }
+```
