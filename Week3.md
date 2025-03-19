@@ -1,8 +1,5 @@
-#First
+#First / inheritance
 ```cpp
-// 상속
-// inheotance
-// protected
 #include <iostream>
 using namespace std;
 
