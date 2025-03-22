@@ -1,4 +1,4 @@
-#First.cpp
+# First.cpp
 ```cpp
 #include <iostream> // 머리부분인 #include는 전처리기를 뜻하며 프로그램이 시작될때 가장 먼저 실행이 된다.
                     // 뒤에 붙는 <iostream>은 입출력 함수/클래스를 사용할 수 있게 해주는 헤더이다.
@@ -19,7 +19,7 @@ int main()
 간단한 변수 선언도 사실 메모리를 할당해주는 것이고 출력하는 것도 나중에 배울 stream이 해준다는 것을 알 수 있었다.*/
 ```
 
-#Second.cpp
+# Second.cpp
 ```cpp
 #include <iostream> 
 
