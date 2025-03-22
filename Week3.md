@@ -4,13 +4,14 @@
 using namespace std;
 
 class CPoly {
-protected:
+protected: // 상속할 때 자식클래스에게 private으로 상속해준다.
 	int w, h;
 public:
 	CPoly(int x, int y) : w(x), h(y) {}
 };
 
 class CRect : public CPoly {
+// CPoly를 상속받았기때문에 protected에 있는 w,h는 CRect에선 private으로 사용되어진다.
 public:
 	CRect(int x, int y) : CPoly(x, y) {}
 	int Area() { return w * h; }
@@ -24,7 +25,7 @@ int main()
 	return 0;
 }
 ```
-# Second / fucntion overriding
+# Second / fucntion overriding(함수의 재정의)
 ```cpp
 #include <iostream>
 
