@@ -1,4 +1,4 @@
-#RectAreaFn.cpp
+# RectAreaFn.cpp
 ```cpp
 #include <iostream>
 
@@ -15,7 +15,7 @@ int main()
 }
 ```
 
-#RectAreaStruct.cpp
+# RectAreaStruct.cpp
 ```cpp
 #include <iostream>
 
@@ -32,7 +32,7 @@ int main()
 }
 ```
 
-#RectAreaClass.cpp
+# RectAreaClass.cpp
 ```cpp
 #include <iostream>
 
