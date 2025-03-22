@@ -1,4 +1,4 @@
-#First / inheritance
+# First / inheritance
 ```cpp
 #include <iostream>
 using namespace std;
