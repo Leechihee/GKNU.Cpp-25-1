@@ -24,7 +24,7 @@ int main()
 	return 0;
 }
 ```
-#Second / fucntion overriding
+# Second / fucntion overriding
 ```cpp
 #include <iostream>
 
