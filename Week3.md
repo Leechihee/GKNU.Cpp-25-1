@@ -28,20 +28,20 @@ int main()
 ```cpp
 #include <iostream>
 
-class CPoly {
+class CPoly { // 추상화 클래스이며 생성자로 객체를 만들 수 없는 클래스이다
 protected:
     int w, h;
 public:
     CPoly(int x, int y) : w(x), h(y) {}
-    virtual int Area() {} // 
-    virtual ~CPoly() {}
+    virtual int Area() = 0; // 순수 가상 함수 : 추상화 클래스를 만들기위한 코드이며 상속받는 모든 클래스는 순수 가상 함수를 재정의해줘야한다.
+    virtual ~CPoly() {} // 파괴자를 가상 함수로 정의하면서 모든 자식 클래스들은 파괴자를 정의해줘야한다.
 };
 
 class CRect : public CPoly {
 public:
     CRect(int x, int height) : CPoly(x, y) {}
-    int Area() override {
-        return (w * h) / 2; // 삼각형 면적 계산 공식 적용
+    int Area() override { // 재정의를 명시해줌으로서 실수 캐치와 코드 수정이 보다 쉬움
+        return w * h; // 직사각형 면적 계산 공식 적용
     }
 };
 
