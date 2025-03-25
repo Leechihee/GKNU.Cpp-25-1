@@ -1,4 +1,4 @@
-# operator overloding
+# Operator Overloding
 ```cpp
 #include <iostream>
 
@@ -19,6 +19,38 @@ int main()
 	p1.Out();
 	p2.Out();
 	p3.Out();
+	return 0;
+}
+```
+# Function Templete
+```cpp
+#include <iostream>
+
+template <typename T>
+T Add(T a, T b)
+{
+	return a + b;
+}
+
+int main()
+{
+	std::cout << Add(1, 2) << std::endl;
+	std::cout << Add(2.2, 3.3) << std::endl;
+	return 0;
+}
+```
+# Vector Class
+```cpp
+#include <iostream>
+#include <vector>
+
+int main()
+{
+	std::vector<int> v = { 1,2,3 };
+	int sum = 0;
+	for (int x : v)
+		sum += x;
+	std::cout << sum << std::endl;
 	return 0;
 }
 ```
