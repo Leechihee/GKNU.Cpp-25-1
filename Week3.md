@@ -29,7 +29,7 @@ int main()
 ```cpp
 #include <iostream>
 
-class CPoly { // 추상화 클래스이며 생성자로 객체를 만들 수 없는 클래스이다
+class CPoly { // 추상화 클래스이며 생성자로 객체를 만들 수 없는 클래스이다. 상속만 하기위한 클래스이다.
 protected:
     int w, h;
 public:
