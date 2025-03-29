@@ -1,4 +1,4 @@
-# First / inheritance
+# First / inheritance (상속)
 ```cpp
 #include <iostream>
 using namespace std;
@@ -25,7 +25,7 @@ int main()
 	return 0;
 }
 ```
-# Second / fucntion overriding(함수의 재정의)
+# Second / fucntion overriding (함수의 재정의)
 ```cpp
 #include <iostream>
 
