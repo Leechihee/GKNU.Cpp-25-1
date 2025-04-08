@@ -25,3 +25,48 @@ int main()
 	return 0;
 }
 ```
+# Memory / Smart Pointer
+```cpp
+#include <iostream>
+#include <memory>
+
+class CPnt {
+	int x, y;
+public:
+	CPnt(int x=0, int y=0) { this->x = x; this->y = y; }
+	void Out() { std::cout << x << ' ' << y << std::endl; }
+};
+
+int main()
+{
+	std::unique_ptr<CPnt> p = std::make_unique<CPnt>(); // delete 불필요 , unique_ptr이 자동 해제
+	p->Out();
+	return 0;
+}
+```
+# Exception
+```cpp
+#include <iostream>
+
+class CPnt {
+	int x, y;
+public:
+	CPnt(int x=0, int y=0) { this->x = x; this->y = y; }
+	void Out() { std::cout << x << ' ' << y << std::endl; }
+};
+
+int main()
+{
+	try {
+		CPnt* p = new CPnt();
+		p->Out();
+		int a = 3, c = 0;
+		std::cout << a / c;
+		delete p;
+	}
+	catch(...){
+		std::cout << "예외발생\n";
+	}
+	return 0;
+}
+```
