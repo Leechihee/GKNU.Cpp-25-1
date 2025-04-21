@@ -22,7 +22,6 @@ int main()
 # 얼굴 찾기
 ```cpp
 #include<OpenCV2/openCV.hpp>
-#include<iostream>
 #include<vector>
 
 using namespace cv;
