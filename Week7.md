@@ -97,6 +97,26 @@ int main()
 	}
 	return 0;
 }
+
+```cpp
+#include <iostream>
+#include <fstream>
+
+int main()
+{
+	std::fstream ifs("my1.txt");
+	try
+	{
+		if (!ifs) // 파일을 열 수 없으면 false 출력 // is_open() 메서드로 출력가능
+			throw "파일을 열 수 없습니다.";
+	}
+	catch (const char* msg)
+	{
+		std::cerr << msg;
+	}
+	return 0;
+}
+```
 ```
 # Fstream // 파일 입출력
 ## 1. ofstream // 파일 쓰기
