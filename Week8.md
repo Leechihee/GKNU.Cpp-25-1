@@ -23,6 +23,7 @@ int main()
 ```cpp
 #include<OpenCV2/openCV.hpp>
 #include<iostream>
+#include<vector>
 
 using namespace cv;
 int main() {
