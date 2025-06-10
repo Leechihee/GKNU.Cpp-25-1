@@ -1,4 +1,4 @@
-# WINDOWS SKD로 메세지 박스 띄우기
+# WINDOWS SDK로 메세지 박스 띄우기
 ## 1. main 함수로 메세지 박스 띄우기
 ```cpp
 #include <windows.h>
